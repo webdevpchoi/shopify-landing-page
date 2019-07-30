@@ -45,10 +45,7 @@
             "settings": {}
           }
         },
-        "block_order": [
-          "slideshow-0",
-          "slideshow-1"
-        ],
+        "block_order": ["slideshow-0", "slideshow-1"],
         "settings": {}
       },
       "featured-collections": {
@@ -77,11 +74,7 @@
             "settings": {}
           }
         },
-        "block_order": [
-          "link_list",
-          "text",
-          "newsletter"
-        ],
+        "block_order": ["link_list", "text", "newsletter"],
         "settings": {}
       }
     },
@@ -139,10 +132,7 @@
               "settings": {}
             }
           },
-          "block_order": [
-            "slideshow-0",
-            "slideshow-1"
-          ],
+          "block_order": ["slideshow-0", "slideshow-1"],
           "settings": {}
         },
         "featured-collections": {
@@ -171,11 +161,7 @@
               "settings": {}
             }
           },
-          "block_order": [
-            "link_list",
-            "text",
-            "newsletter"
-          ],
+          "block_order": ["link_list", "text", "newsletter"],
           "settings": {}
         }
       },
@@ -271,10 +257,7 @@
               }
             }
           },
-          "block_order": [
-            "slideshow-0",
-            "1492095993817"
-          ],
+          "block_order": ["slideshow-0", "1492095993817"],
           "settings": {
             "slideshow_height": "medium",
             "text_size": "medium",
@@ -326,9 +309,7 @@
               "settings": {}
             }
           },
-          "block_order": [
-            "1492033877875-0"
-          ],
+          "block_order": ["1492033877875-0"],
           "settings": {}
         },
         "1492033924902": {
@@ -343,9 +324,7 @@
               }
             }
           },
-          "block_order": [
-            "1492033924902-0"
-          ],
+          "block_order": ["1492033924902-0"],
           "settings": {
             "title": ""
           }
@@ -413,11 +392,7 @@
               "settings": {}
             }
           },
-          "block_order": [
-            "link_list",
-            "text",
-            "newsletter"
-          ],
+          "block_order": ["link_list", "text", "newsletter"],
           "settings": {}
         }
       },
