@@ -146,7 +146,7 @@
           <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
             {% include 'icon-cart' %}
             <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
-            <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
+            <div id="CartCount" class="site-header__cart-count" data-cart-count-bubble>
               <span data-cart-count>{{ cart.item_count }}</span>
               <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
             </div>
@@ -172,6 +172,9 @@
               {% include 'icon-close' %}
             </button>
           {% endunless %}
+          <div class="user">
+            <i class="fa fa-user"></i>
+          </div>
         </div>
 
       </div>

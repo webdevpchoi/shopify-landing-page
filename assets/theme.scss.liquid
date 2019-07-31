@@ -4473,14 +4473,10 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 
 .site-header__cart-count {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 0.4rem;
-  top: 0.2rem;
   font-weight: bold;
-  background-color: $color-btn-primary;
   color: $color-btn-primary-text;
   border-radius: 50%;
   min-width: 1em;
@@ -4488,7 +4484,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
   span {
     font-family: $font-stack-cart-notification;
-    font-size: calc(11em / 16);
     line-height: 1;
   }
 }
