@@ -19,7 +19,7 @@
     {% if section.settings.home_page_only == false or template.name == 'index' %}
       <style>
         .announcement-bar {
-          background-color: {{ section.settings.color_bg }};         
+          background-color: transparent;         
         }
 
         .announcement-bar--link:hover {
@@ -38,17 +38,27 @@
           color: {{ section.settings.color_text }};
         }
       </style>
+      <div class="announcement-wrapper">
+        {% if section.settings.message_link == blank %}
+          <div class="announcement-bar">
+        {% else %}
+          <a href="{{ section.settings.message_link }}" class="announcement-bar announcement-bar--link">
+        {% endif %}
+  
+          <p class="announcement-bar__message">
+              <i class="fa fa-phone"></i>
+            Call<strong>800-318-1439</strong> or Text <strong>949-612-2053</strong> 
+            <small><strong>Sales and Support:</strong> M-F 5:00 am to 5:00 pm PT</small>
+          </p>
+          <p>
+              <img src="{{ 'flag.gif' | asset_url }}" />
+            American Owned and Operated
+          </p>
+  
+        {% if section.settings.message_link == blank %}
+          </div>
 
-      {% if section.settings.message_link == blank %}
-        <div class="announcement-bar">
-      {% else %}
-        <a href="{{ section.settings.message_link }}" class="announcement-bar announcement-bar--link">
-      {% endif %}
-
-        <p class="announcement-bar__message">{{ section.settings.message_text | escape }}</p>
-
-      {% if section.settings.message_link == blank %}
-        </div>
+      </div>
       {% else %}
         </a>
       {% endif %}
@@ -56,7 +66,7 @@
     {% endif %}
   {% endif %}
 
-  <header class="site-header{% if section.settings.align_logo == 'left' %} border-bottom logo--left{% else %} logo--center{% endif %}" role="banner">
+  <header class="site-header{% if section.settings.align_logo == 'left' %} logo--left{% else %} logo--center{% endif %}" role="banner">
     <div class="grid grid--no-gutters grid--table site-header__mobile-nav">
       {% if section.settings.align_logo == 'center' %}
         {%- assign logo_classes = 'medium-up--one-third medium-up--push-one-third logo-align--center' -%}
